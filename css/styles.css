@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* リキッドレイアウト対応 */
 body {
-  font-family: "";
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .u-desktop {
@@ -29,10 +29,10 @@ html {
 }
 @media screen and (min-width: 768px) {
   html {
-    font-size: 1.4545454545vw;
+    font-size: 1.4414414414vw;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1110px) {
   html {
     font-size: 16px;
   }
@@ -182,15 +182,44 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .l-inner {
-    max-width: 1150px;
+    max-width: 1160px;
     padding-right: 25px;
     padding-left: 25px;
   }
+}
+
+.c-section-header {
+  color: #391E88;
+  text-align: center;
+}
+
+.c-section-header__entitle {
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 1.2333333333;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.c-section-header__jatitle {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 1;
 }
 
 .c-test {
   font-size: 100px;
   font-size: 6.25rem;
   color: red;
+  font-weight: bold;
+}
+
+.c-test--english {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */
