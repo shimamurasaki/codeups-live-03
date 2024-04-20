@@ -188,6 +188,29 @@ select::-ms-expand {
   }
 }
 
+.c-button {
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  width: 200px;
+  width: 12.5rem;
+  text-transform: uppercase;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#7633A4), to(#250D65)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #7633A4 0%, #250D65 100%) 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  line-height: 1;
+  padding: 23px 0;
+  padding: 1.4375rem 0;
+}
+
+.block {
+  text-align: center;
+}
+
 .c-section-header {
   color: #391E88;
   text-align: center;
@@ -202,6 +225,11 @@ select::-ms-expand {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .c-section-header__entitle {
+    font-size: 2.25rem;
+  }
+}
 
 .c-section-header__jatitle {
   font-size: 13px;
@@ -210,16 +238,9 @@ select::-ms-expand {
   letter-spacing: 0.05em;
   line-height: 1;
 }
-
-.c-test {
-  font-size: 100px;
-  font-size: 6.25rem;
-  color: red;
-  font-weight: bold;
-}
-
-.c-test--english {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+@media screen and (min-width: 768px) {
+  .c-section-header__jatitle {
+    font-size: 0.875rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
