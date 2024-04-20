@@ -16,9 +16,8 @@ $padding-sp: 20px;
 ////////////////////
 // フォント設定
 ////////////////////
-
-$base-font-family: "";
-$second-font-family: "";
+$base-font-family: "Noto Sans JP", sans-serif;
+$english-font-family: "Montserrat", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -26,7 +25,6 @@ body {
 }
 
 // フォントウェイト
-$regular: 300;
 $normal: 400;
 $bold: 700;
 
