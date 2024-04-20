@@ -25,9 +25,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   //ハンバーガーメニュー
   $(".js-hamburger").click(function () {
-    $(this).toggleClass("is-active");
-    $("html").toggleClass("is-fixed");
-    // $(".drawer-menu").toggleClass("open");
+    if($(".js-hamburger").hasClass("is-active")){
+      $(".js-hamburger").removeClass("is-active");
+      $(".js-sp-nav__item").removeClass("is-active");
+      // $("html").toggleClass("is-fixed");
+      $(".js-sp-nav").fadeOut();
+    }else {
+      $(".js-hamburger").addClass("is-active");
+      $(".js-sp-nav__item").addClass("is-active");
+      // $("html").toggleClass("is-fixed");
+      $(".js-sp-nav").fadeIn();
+    };
   });
 
 
