@@ -3,5 +3,10 @@
 .c-test {
   font-size: rem(100);
   color: red;
+  font-weight: bold;
 }
 
+.c-test--english {
+  font-family: $english-font-family;
+  font-weight: bold;
+}
