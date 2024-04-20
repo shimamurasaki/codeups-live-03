@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.p-mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/common/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-mv__header {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(50);
+
+}
+
+.p-mv__title {
+  font-size: rem(48);
+  font-weight: $bold;
+  font-family: $english-font-family;
+  text-transform: uppercase;
+  line-height: 1.29167;
+  color: $white;
+}
+
+.p-mv__subtitle {
+  margin-top: rem(20);
+  font-size: rem(16);
+  letter-spacing: 0.1em;
+  line-height: 1.8125;
+  color: $white;
+}
+
+.p-mv__btn {
+  margin-top: rem(50);
+}
+
+.p-mv__scroll {
+  font-size: rem(12);
+  font-weight: $bold;
+  font-family: $english-font-family;
+  text-transform: uppercase;
+  color: $white;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 78px;
+  transform: rotate(90deg);
+}
+
+.p-mv__scroll span {
+  position: relative;
+}
+
+.p-mv__scroll span::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background-color: $white;
+  transform: rotate(90deg);
+  right: -35px;
+  bottom: -17px;
+}

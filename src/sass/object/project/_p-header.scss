@@ -2,8 +2,11 @@
 
 .p-header {
   height: rem(62);
-  background-color: #210540;
+  // background-color: #210540;
+  background-color: transparent;
   z-index: 1000;
+  position: fixed;
+  width: 100%;
 }
 
 .p-header__inner {
@@ -16,6 +19,8 @@
 
 .p-header__logoLink {
   color: $white;
+  font-size: rem(18);
+  display: block;
 }
 
 .p-header__drawer {

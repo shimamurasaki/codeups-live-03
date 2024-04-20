@@ -260,6 +260,23 @@ select::-ms-expand {
           transform: rotate(45deg);
 }
 
+.c-mv-btn {
+  display: inline-block;
+  padding: 22px 69px;
+  padding: 1.375rem 4.3125rem;
+  border: 1px solid #fff;
+  border-radius: 3.125rem;
+  text-align: center;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  color: #fff;
+}
+
 .c-section-header {
   color: #391E88;
   text-align: center;
@@ -344,8 +361,10 @@ select::-ms-expand {
 .p-header {
   height: 62px;
   height: 3.875rem;
-  background-color: #210540;
+  background-color: transparent;
   z-index: 1000;
+  position: fixed;
+  width: 100%;
 }
 
 .p-header__inner {
@@ -365,6 +384,9 @@ select::-ms-expand {
 
 .p-header__logoLink {
   color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -381,6 +403,79 @@ select::-ms-expand {
   .p-header__pc-nav {
     display: block;
   }
+}
+
+.p-mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/common/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-mv__header {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50px;
+  left: 3.125rem;
+}
+
+.p-mv__title {
+  font-size: 48px;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.29167;
+  color: #fff;
+}
+
+.p-mv__subtitle {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  line-height: 1.8125;
+  color: #fff;
+}
+
+.p-mv__btn {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+
+.p-mv__scroll {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 78px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.p-mv__scroll span {
+  position: relative;
+}
+
+.p-mv__scroll span::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background-color: #fff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: -35px;
+  bottom: -17px;
 }
 
 .pc-nav__items {
