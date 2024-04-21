@@ -21,10 +21,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -123,7 +126,7 @@
       <div class="p-service__items">
         <div class="p-service__item p-card">
           <div class="p-card__img">
-            <img src="./images/common/service_1.jpg" alt="サービス画像1">
+            <img src="./src/images/common/service_1.jpg" alt="サービス画像1">
           </div>
           <div class="p-card__body">
             <h3 class="p-card__title">Webサイト制作</h3>
@@ -146,6 +149,42 @@
           <div class="p-card__body">
             <h3 class="p-card__title">アプリ開発</h3>
             <p class="p-card__text">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-works p-works">
+    <div class="p-works__inner l-inner">
+      <div class="p-works__content">
+        <div class="p-works__images">
+          <!-- Swiper -->
+          <div class="swiper js-works-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide p-works__img">
+                <img src="./src/images/common/works_1.jpg" alt="">
+              </div>
+              <div class="swiper-slide p-works__img">
+                <img src="./src/images/common/works_1.jpg" alt="">
+              </div>
+              <div class="swiper-slide p-works__img">
+                <img src="./src/images/common/hero.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js-works-paginations"></div>
+        </div>
+        <div class="p-works__text-body">
+          <div class="p-works__title c-section-header">
+            <h2 class="c-section-header__entitle">works</h2>
+            <p class="c-section-header__jatitle">制作実績</p>
+          </div>
+          <div class="p-works__text-block">
+            <p class="p-works__text">様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！</p>
+          </div>
+          <div class="p-works__btn">
+              <a href="" class="c-button">more</a>
           </div>
         </div>
       </div>
@@ -175,7 +214,6 @@
             <a href="" class="c-button">more</a>
         </div>
       </div>
-
     </div>
   </section>
 
