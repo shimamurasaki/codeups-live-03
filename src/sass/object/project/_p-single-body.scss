@@ -1,0 +1,88 @@
+@use "global" as *;
+
+.p-single-body__inner.l-inner {
+  max-width: rem(800);
+}
+
+.p-single-body__title h1 {
+  font-size: rem(22);
+  font-weight: normal;
+  line-height: 1.4375;
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.p-single-body__meta {
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-top: rem(10);
+  }
+}
+
+.p-single-body__image {
+  margin-top: rem(14);
+  position: relative;
+  @include mq("md") {
+    margin-top: rem(27);
+  }
+}
+
+.p-single-body__image::before {
+  content: "";
+  display: block;
+  padding-top: 55.8%;// 187縦/335横,このpaddingの高さ分、画像を充ててあげる
+}
+
+.p-single-body__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;// これを指定しないとトリミングされない
+  height: 100%;// これを指定しないとトリミングされない
+  object-fit: cover;
+}
+
+.p-single-body__content {
+   
+  p {
+    margin-top: rem(30);
+    font-size: rem(14);
+    line-height: 1.714857143;
+    @include mq("md") {
+    }
+  }
+
+  h2 {
+    margin-top: rem(40);
+    font-size: rem(18);
+    line-height: 1.5;
+    padding-left: rem(15);
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: rem(6);
+      height: 100%;
+      background-color: #391e88;
+      border-radius: 5px;
+      left: rem(-3);
+    }
+    @include mq("md") {
+      margin-top: rem(60);
+      font-size: rem(24);
+    }
+  }
+
+  h3 {
+    margin-top: rem(40);
+    font-size: rem(16);
+    line-height: 1.5;
+    padding-left: rem(15);
+    @include mq("md") {
+      font-size: rem(18);
+    }
+  }
+
+}
