@@ -2,34 +2,6 @@
 
 .p-company-info__items {
   margin-top: rem(30);
-  @include mq("md") {
-
-  }
-}
-
-.p-company-info__item {
-  padding: rem(20) 0;
-  border-bottom: 1px solid #ddd;
-  @include mq("md") {
-    display: flex;
-    padding: rem(30) 0;
-  }
-}
-
-.p-company-info__item dt {
-  font-size: rem(16);
-  font-weight: 600;
-  @include mq("md") {
-    width: rem(174);
-  }
-}
-
-.p-company-info__item dd {
-  margin-top: rem(10);
-  @include mq("md") {
-    margin-top: 0;
-    width: calc(100% - rem(174));
-  }
 }
 
 .p-company-info__map {

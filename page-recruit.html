@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>CodeUpsライブコーディング第3章</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- googleFont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header class="l-header p-header">
+    <div class="p-header__inner">
+      <div class="p-header__logo">
+        <a href="" class="p-header__logoLink">CodeUps</a>
+      </div>
+      <div class="p-header__drawer c-hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="p-header__pc-nav pc-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item"><a href="">news</a></li>
+          <li class="pc-nav__item"><a href="">service</a></li>
+          <li class="pc-nav__item"><a href="">works</a></li>
+          <li class="pc-nav__item"><a href="">company</a></li>
+          <li class="pc-nav__item"><a href="">recruit</a></li>
+          <li class="pc-nav__item"><a href="">contact</a></li>
+        </ul>
+      </nav>
+      <nav class="p-header__sp-nav sp-nav js-sp-nav">
+        <ul class="sp-nav__items">
+          <li class="sp-nav__item js-sp-nav__item"><a href="">news</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">service</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">works</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">company</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">recruit</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 下層ページのメインビュー -->
+  <div class="l-sub-mv p-sub-mv">
+    <div class="p-sub-mv__title">
+      <div class="c-section-header c-section-header--white">
+        <h1 class="c-section-header__entitle">recruit</h1>
+        <p class="c-section-header__jatitle">私たちについて</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- パンくずリスト（あとでプラグイン化） -->
+  <div class="c-breadcrumb">
+    <div class="l-inner">
+      <div>HOME > 採用情報</div>
+    </div>
+  </div>
+
+  
+
+  <section class="l-page-recruit p-page-recruit">
+    <div class="p-page-recruit__inner l-inner">
+      <div class="p-page-recruit__title">
+        <h2 class="p-page-recruit__main">Enjoy<br class="u-mobile"> Creation for<br class="u-mobile"> Client</h2>
+        <p class="p-page-recruit__sub">採用情報</p>
+      </div>
+      <p class="p-page-recruit__text">心を弾ましながら<br>夢いっぱいのサイトを作ろう！<br>お客様も自分もみんなが幸せになれるように</p>
+      <div class="p-page-recruit__image">
+        <picture>
+          <source media="（min-width: 768px）" srcset="./src/images/common/recruit-sub-pc.png">
+          <img src="./src/images/common/recruit-sub-sp.png" alt="女性たちの写真">
+        </picture>
+      </div>
+
+      <div class="p-page-recruit__occupation">
+        <div class="p-page-recruit__occupation-title c-section-header">
+          <h2 class="c-section-header__subpage">募集中の職種</h2>
+        </div>
+        <div class="p-page-recruit__items">
+          <div class="p-page-recruit__item">
+            <h3 class="p-page-recruit__job-title">Webデザイナー</h3>
+            <dl class="p-page-recruit__lists p-common-lists">
+              <div class="p-common-lists__list">
+                <dt>雇用形態</dt>
+                <dd>正社員</dd>
+              </div>
+              <div class="p-common-lists__list">
+                <dt>給与</dt>
+                <dd>400万円〜600万円（経験・能力を考慮のうえ優遇）</dd>
+              </div>
+              <div class="p-common-lists__list">
+                <dt>仕事内容</dt>
+                <dd>Webサイトの制作。サイトのデザインとコーディングを担当していただきます。</dd>
+              </div>
+              <div class="p-common-lists__list">
+                <dt>勤務時間</dt>
+                <dd>10:00 〜 19:00（実働8時間、休憩1時間）</dd>
+              </div>
+              <div class="p-common-lists__list">
+                <dt>応募資格</dt>
+                <dd>PhotoshopやXDなどのデザインツールの使い方を理解し、コーディングの基礎スキルがある方。実務未経験でも学校や独学で学習した方を歓迎します。<br>・デザインやコーディングを楽しめる方<br>・常にアンテナを張って積極的にトレンドや最新の技術を取り入れる方<br>・お客様と一緒に楽しみながら高い目的を目指せる方</dd>
+              </div>
+            </dl>
+            <div class="p-page-recruit__apply">
+              <a href="" class="c-button">応募する</a>
+              <p>求人サイトへ遷移します</p>
+            </div>
+          </div><!-- / p-page-recruit__item -->
+          <div class="p-page-recruit__item">
+            <h3 class="p-page-recruit__job-title">Webデザイナー</h3>
+            <dl class="p-page-recruit__lists p-common-lists">
+              <div class="p-common-lists__list">
+                <dt>雇用形態</dt>
+                <dd>正社員</dd>
+              </div>
+              <div class="p-common-lists__list">
+                <dt>給与</dt>
+                <dd>400万円〜600万円（経験・能力を考慮のうえ優遇）</dd>
+              </div>
+              <div class="p-common-lists__list">
+                <dt>仕事内容</dt>
+                <dd>Webサイトの制作。サイトのデザインとコーディングを担当していただきます。</dd>
+              </div>
+              <div class="p-common-lists__list">
+                <dt>勤務時間</dt>
+                <dd>10:00 〜 19:00（実働8時間、休憩1時間）</dd>
+              </div>
+              <div class="p-common-lists__list">
+                <dt>応募資格</dt>
+                <dd>PhotoshopやXDなどのデザインツールの使い方を理解し、コーディングの基礎スキルがある方。実務未経験でも学校や独学で学習した方を歓迎します。<br>・デザインやコーディングを楽しめる方<br>・常にアンテナを張って積極的にトレンドや最新の技術を取り入れる方<br>・お客様と一緒に楽しみながら高い目的を目指せる方</dd>
+              </div>
+            </dl>
+            <div class="p-page-recruit__apply">
+              <a href="" class="c-button">応募する</a>
+              <p>求人サイトへ遷移します</p>
+            </div>
+          </div><!-- / p-page-recruit__item -->
+        </div><!-- / p-page-recruit__items -->
+        <div class="p-page-recruit__movies">
+          <div class="p-page-recruit__movie-title c-section-header">
+            <h2 class="c-section-header__subpage">社内ムービー</h2>
+          </div>
+          <div class="p-page-recruit__movie">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tXurntXHGt8?si=nXvQh28M4FenAjpp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-contact l-contact--mt0 p-contact">
+    <div class="p-contact__inner l-inner">
+      <div class="p-contact__title c-section-header">
+        <h2 class="c-section-header__entitle">contact</h2>
+        <p class="c-section-header__jatitle">お問い合わせ</p>
+      </div>
+      <div class="p-contact__contents">
+        <div class="p-contact__text-block">
+          <p class="p-contact__text">Webサイトの制作のご依頼やお見積りなど、<br class="u-mobile">お気軽にご相談ください。</p>
+        </div>
+        <div class="p-contact__btn">
+          <a href="" class="c-button">more</a>
+        </div>
+      </div>  
+    </div>
+  </section>
+  
+  <footer class="l-footer p-footer">
+    <div class="p-footer__inner">
+      <nav class="p-footer__nav p-footer-nav">
+        <ul class="p-footer-nav-items">
+          <li class="p-footer-nav-item"><a href="">home</a></li>
+          <li class="p-footer-nav-item"><a href="">news</a></li>
+          <li class="p-footer-nav-item"><a href="">service</a></li>
+          <li class="p-footer-nav-item"><a href="">works</a></li>
+          <li class="p-footer-nav-item"><a href="">company</a></li>
+          <li class="p-footer-nav-item"><a href="">recruit</a></li>
+          <li class="p-footer-nav-item"><a href="">contact</a></li>
+        </ul>
+      </nav>
+      <p class="p-footer__copyright">
+        <small>&copy; CodeUps</small>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
