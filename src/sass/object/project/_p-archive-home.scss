@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.p-archive-home__inner {
+  max-width: rem(965);// 915+左右25ずつ
+}
+
+.p-archive-home__item + .p-archive-home__item {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(15);
+  }
+}
