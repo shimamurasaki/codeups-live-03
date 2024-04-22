@@ -1,13 +1,22 @@
 @use "global" as *;
 
-.p-service {
-
-}
-
 .p-service__items {
   margin-top: rem(32);
+  @include mq("md") {
+    display: flex;
+    margin-top: rem(30);
+    gap: rem(30);
+  }
 }
 
 .p-service__item + .p-service__item {
   margin-top: rem(40);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.p-service__btn {
+  text-align: center;
+  margin-top: rem(30);
 }

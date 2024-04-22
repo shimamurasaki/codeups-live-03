@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+.c-section-header--left {
+  @include mq(md) {
+    text-align-last: left;
+  }
+}
+
 .c-section-header__entitle {
   font-size: rem(30);
   font-weight: bold;

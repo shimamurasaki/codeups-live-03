@@ -8,6 +8,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: rem(20);
+  @include mq("md") {
+    justify-content: center;
+  }
 }
 
 .p-footer-nav-item a {

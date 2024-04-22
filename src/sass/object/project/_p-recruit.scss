@@ -2,10 +2,24 @@
 
 .p-recruit__inner.l-inner {
   padding: 0;
+  @include mq("md") {
+    padding-left: rem(20);
+    padding-right: rem(20);
+  }
+}
+
+.p-recruit__contents {
+  @include mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .p-recruit__img {
   position: relative;
+  @include mq("md") {
+    width: 60%;
+  }
 }
 
 .p-recruit__img::before {
@@ -24,10 +38,13 @@
   object-fit: cover;
 }
 
-.p-recruit__contents {
+.p-recruit__content {
   background-color: #f7f7f7;
   padding-top: rem(60);
   padding-bottom: rem(50);
+  @include mq("md") {
+    width: 40%;
+  }
 }
 
 .p-recruit__text-block {
