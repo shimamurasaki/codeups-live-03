@@ -198,6 +198,16 @@ select::-ms-expand {
   }
 }
 
+.l-archive-works {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .l-archive-works {
+    margin-top: 4.375rem;
+  }
+}
+
 .l-company-info {
   margin-top: 80px;
   margin-top: 5rem;
@@ -531,6 +541,58 @@ select::-ms-expand {
   }
 }
 
+.p-archive-works__inner.l-inner {
+  padding: 0 15px;
+  padding: 0 0.9375rem;
+}
+
+.p-archive-works__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-archive-works__items {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem 1.875rem;
+  }
+}
+
+.p-archive-works__image {
+  position: relative;
+}
+
+.p-archive-works__image::before {
+  content: "";
+  display: block;
+  padding-top: 68%;
+}
+
+.p-archive-works__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-archive-works__title {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+}
+
+.p-archive-works__name {
+  text-align: center;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
 .p-card__img {
   position: relative;
 }
@@ -622,6 +684,7 @@ select::-ms-expand {
   margin-top: 40px;
   margin-top: 2.5rem;
   aspect-ratio: 335/240;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .p-company-info__map {

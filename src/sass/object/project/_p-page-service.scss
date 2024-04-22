@@ -1,13 +1,5 @@
 @use "global" as *;
 
-.p-page-service {
-
-}
-
-.p-page-service__inner {
-
-}
-
 .p-page-service__item {
   @include mq("md") {
     display: flex;
