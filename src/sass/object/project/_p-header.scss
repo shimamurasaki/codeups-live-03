@@ -2,14 +2,15 @@
 
 .p-header {
   height: rem(64);
-  // background-color: #210540;
   background-color: transparent;
   z-index: 1000;
   position: fixed;
   width: 100%;
-  @include mq("md") {
-    background-color: #21054d;
-  }
+  transition: 0.3s;
+}
+
+.p-header.is-color {
+  background-color: #210540;
 }
 
 .p-header__inner {

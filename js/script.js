@@ -1,7 +1,7 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-  var topBtn = $('.pagetop');
+  let topBtn = $('.c-to-top');
   topBtn.hide();
 
   // ボタンの表示設定
@@ -12,6 +12,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     } else {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
+    }
+  });
+
+  // ヘッダークラス名付与
+  let header = $('.p-header');
+  let headerHeight = $('.p-header').height();
+  let height = $('.p-mv').height();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > (height - headerHeight)) {
+      header.addClass('is-color');
+    } else {
+      header.removeClass('is-color');
     }
   });
 
