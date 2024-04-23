@@ -242,6 +242,19 @@ select::-ms-expand {
   margin-top: 0;
 }
 
+.l-page-contact {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .l-page-contact {
+    margin-top: 4.375rem;
+    margin-bottom: 4.375rem;
+  }
+}
+
 .l-page-navi {
   margin-top: 40px;
   margin-top: 2.5rem;
@@ -951,6 +964,63 @@ select::-ms-expand {
   }
 }
 
+.p-form {
+  letter-spacing: 0.05em;
+}
+
+.p-form dl:not(:first-child) {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+.p-form__radio {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  gap: 0.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-form__radio {
+    display: block;
+    gap: 0;
+  }
+}
+
+.p-form__item dt {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.p-form__item dt span {
+  color: #391e88;
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-left: 10px;
+  margin-left: 0.625rem;
+}
+
+.p-form__item dt span.p-form__tel-info {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #333;
+  margin-left: 0;
+}
+
+.p-form__btn {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  text-align: center;
+}
+
 .p-header {
   height: 64px;
   height: 4rem;
@@ -1189,6 +1259,33 @@ select::-ms-expand {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 300;
+}
+
+.p-page-contact__text {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-page-contact__text {
+    font-size: 1rem;
+  }
+}
+
+.p-page-contact__content {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  padding: 30px;
+  padding: 1.875rem;
+  background-color: #f7f7f7;
+}
+@media screen and (min-width: 768px) {
+  .p-page-contact__content {
+    margin-top: 2.5rem;
+    padding: 5.625rem;
+  }
 }
 
 .p-page-recruit {
@@ -1851,6 +1948,250 @@ select::-ms-expand {
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0.05em;
+}
+
+/*デフォルト色の指定*/
+/*サイズ等の指定*/
+/*ボタン系の指定*/
+/*ラジオボタンの指定*/
+/*チェックボックスの指定*/
+/*テキストエリアの指定*/
+[type=text],
+[type=search],
+[type=tel],
+[type=url],
+[type=email],
+[type=password],
+[type=date],
+textarea {
+  /*↓リセットCSS */
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  font-family: inherit;
+  /*↓カスタム */
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 10px 10px;
+  padding: 0.625rem 0.625rem;
+  width: 100%;
+  max-width: 300px;
+  max-width: 18.75rem;
+  background: #fff;
+  border: 1px solid #AAAAAA;
+  border-radius: 0.375rem;
+  /*↓↓↓↓不要ならコメントアウト or 削除 */
+  /*↓↓選択されているときの色*/
+}
+[type=text]:focus,
+[type=search]:focus,
+[type=tel]:focus,
+[type=url]:focus,
+[type=email]:focus,
+[type=password]:focus,
+[type=date]:focus,
+textarea:focus {
+  border: 1px solid #391E88;
+}
+
+[type=tel] {
+  max-width: 200px;
+  max-width: 12.5rem;
+  width: 100%;
+}
+
+button,
+[type=button],
+[type=submit] {
+  /*↓リセットCSS */
+  margin: 0;
+  background-image: none;
+  width: auto;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  /*↓カスタム */
+  padding: 20px 72px;
+  padding: 1.25rem 4.5rem;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#7633a4), to(#250d65)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  font-size: 14px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 3.125rem;
+  line-height: 1;
+}
+
+[type=radio] {
+  display: none;
+}
+[type=radio] + span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 28px;
+  padding: 0 0 0 1.75rem;
+  margin: 0 35px 0 0;
+  margin: 0 2.1875rem 0 0;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+[type=radio] + span::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  width: 18px;
+  width: 1.125rem;
+  height: 18px;
+  height: 1.125rem;
+  display: block;
+}
+[type=radio] + span::after {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+[type=radio]:checked + span::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 3px;
+  left: 0.1875rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #391E88;
+  border-radius: 50%;
+  width: 12px;
+  width: 0.75rem;
+  height: 12px;
+  height: 0.75rem;
+  display: block;
+  opacity: 1;
+}
+
+[type=checkbox] {
+  display: none;
+}
+[type=checkbox] + span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 25px;
+  padding: 0 0 0 1.5625rem;
+  margin: 0 20px 0 0;
+  margin: 0 1.25rem 0 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+[type=checkbox] + span::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #f00;
+  width: 20px;
+  width: 1.25rem;
+  height: 20px;
+  height: 1.25rem;
+  display: block;
+}
+[type=checkbox] + span::after {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+[type=checkbox]:checked + span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  opacity: 1;
+  /*チェックマークじゃない場合は以下を変更する*/
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  width: 18px;
+  width: 1.125rem;
+  height: 10px;
+  height: 0.625rem;
+  margin-top: -0.1em;
+  margin-left: 0.1em;
+  border-left: 4px solid #f00;
+  border-bottom: 4px solid #f00;
+}
+
+select {
+  /*↓リセットCSS */
+  border-radius: 0;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  /*↓カスタム */
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 10px 10px;
+  padding: 0.625rem 0.625rem;
+  background-color: #fff;
+  border: 1px solid #AAAAAA;
+  border-radius: 0.375rem;
+  /*↓デフォルトのアイコンを消す場合はコメントアウト（noneにする）*/
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  /*↓デフォルトではないアイコンを使う場合は入力する*/
+}
+select:focus {
+  border: 1px solid #391E88;
+}
+
+[type=date] {
+  position: relative;
+  /*↓デフォルトのアイコンを消す場合はコメントアウト（noneにする）*/
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  /*↓デフォルトではないアイコンを使う場合は入力する*/
+}
+[type=date]:focus {
+  border-color: 1px solid #391E88;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+textarea {
+  height: 255px;
+  height: 15.9375rem;
+  width: 100%;
+  max-width: 600px;
+  max-width: 37.5rem;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>CodeUpsライブコーディング第3章</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- googleFont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header class="l-header p-header">
+    <div class="p-header__inner">
+      <div class="p-header__logo">
+        <a href="" class="p-header__logoLink">CodeUps</a>
+      </div>
+      <div class="p-header__drawer c-hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="p-header__pc-nav pc-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item"><a href="">news</a></li>
+          <li class="pc-nav__item"><a href="">service</a></li>
+          <li class="pc-nav__item"><a href="">works</a></li>
+          <li class="pc-nav__item"><a href="">company</a></li>
+          <li class="pc-nav__item"><a href="">recruit</a></li>
+          <li class="pc-nav__item"><a href="">contact</a></li>
+        </ul>
+      </nav>
+      <nav class="p-header__sp-nav sp-nav js-sp-nav">
+        <ul class="sp-nav__items">
+          <li class="sp-nav__item js-sp-nav__item"><a href="">news</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">service</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">works</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">company</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">recruit</a></li>
+          <li class="sp-nav__item js-sp-nav__item"><a href="">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 下層ページのメインビュー -->
+  <div class="l-sub-mv p-sub-mv">
+    <div class="p-sub-mv__title">
+      <div class="c-section-header c-section-header--white">
+        <h1 class="c-section-header__entitle">contact</h1>
+        <p class="c-section-header__jatitle">お問い合わせ</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- パンくずリスト（あとでプラグイン化） -->
+  <div class="c-breadcrumb">
+    <div class="l-inner">
+      <div>HOME > CONTACT</div>
+    </div>
+  </div>
+
+  <div class="l-page-contact p-page-contact">
+    <div class="p-page-contact__inner l-inner">
+      <p class="p-page-contact__text">Webサイトの制作のご依頼やお見積りなど、<br class="u-mobile">お気軽にご相談ください。</p>
+      <div class="p-page-contact__content p-form">
+        <form action="" method="post" id="">
+          <dl class="p-form__item">
+            <dt class="">お問い合わせ種別<span><sup>*</sup>必須</span></dt>
+            <dd class="p-form__radio">
+              <label><input type="radio" name="target" value="お仕事のご依頼・ご相談" checked><span>お仕事のご依頼・ご相談</span></label>
+              <label><input type="radio" name="target" value="お見積りのご依頼"><span>お見積りのご依頼</span></label>
+              <label><input type="radio" name="target" value="採用について"><span>採用について</span></label>
+              <label><input type="radio" name="target" value="その他"><span>その他</span></label>
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt class="">お名前<span><sup>*</sup>必須</span></dt>
+            <dd class="">
+              <input type="text" name="company" value="" required>
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt class="">会社名</dt>
+            <dd class="">
+              <input type="email" name="mail_address" value="" class="validate[]">
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt class="">メールアドレス<span><sup>*</sup>必須</span></dt>
+            <dd class="">
+              <input type="email" name="mail_address" value="" class="validate[]" required>
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt class="">お電話番号<span class="p-form__tel-info">（半角数字ハイフンなし）</span></dt>
+            <dd class="">
+              <input type="tel" name="tel_number" value="" class="validate[]">
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt class="">お問い合わせ内容<span>必須</span></dt>
+            <dd class="">
+              <textarea name="contents" required></textarea>
+            </dd>
+          </dl>
+          <dl class="p-form__item">
+            <dt class="">必須PON DESIGNをどちらでお知りになりましたか？<span><sup>*</sup>必須</span></dt>
+            <dd class="">
+              <select name="hoge" required>
+                <option value="">選択してください</option>
+                <option value="セレクト1">Google/Yahoo検索</option>
+                <option value="セレクト2">SNS</option>
+                <option value="セレクト2">ブログ</option>
+                <option value="セレクト2">友人や知人</option>
+                <option value="セレクト2">その他</option>
+              </select>
+            </dd>
+          </dl>
+          <div class="p-form__btn">
+            <input type="button" value="送信する">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="l-footer p-footer">
+    <div class="p-footer__inner">
+      <nav class="p-footer__nav p-footer-nav">
+        <ul class="p-footer-nav-items">
+          <li class="p-footer-nav-item"><a href="">home</a></li>
+          <li class="p-footer-nav-item"><a href="">news</a></li>
+          <li class="p-footer-nav-item"><a href="">service</a></li>
+          <li class="p-footer-nav-item"><a href="">works</a></li>
+          <li class="p-footer-nav-item"><a href="">company</a></li>
+          <li class="p-footer-nav-item"><a href="">recruit</a></li>
+          <li class="p-footer-nav-item"><a href="">contact</a></li>
+        </ul>
+      </nav>
+      <p class="p-footer__copyright">
+        <small>&copy; CodeUps</small>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
